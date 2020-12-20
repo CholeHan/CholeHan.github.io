@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0045)http://www.heben123.com/win8/player/live.html -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+   
+  <title>直播</title> 
+	<meta http-equiv="pragma" content="no-cache"> 
+	<meta http-equiv="cache-control" content="no-cache"> 
+	<meta http-equiv="expires" content="0"> 
+<link rel="stylesheet" type="text/css" href="css/live.css">
+ </head> 
+ <body> 
+  <div class="index-video-channel"> 
+   <div class="video-container"> 
+    <div class="channel-content"> 
+     <div class="channel-menu"> 
+      <ul class="menu-list"> 	  
+       
+       <li id="list2" onclick="player('2')" title="高清直播" ><span></span></li> 
+       <li id="list0" onclick="player('0')" title="全球直播" ><span></span></li>
+       <li id="list7" onclick="player('7')" title="央视直播" ><span></span></li> 
+       <li id="list5" onclick="player('5')" title="网络直播" ><span></span></li> 
+	   <!--<li id="list9" onclick="player('9')" title="网络直播" ><span></span></li>-->
+	   <li id="list8" onclick="player('8')" title="城市联合" ><span></span></li>       
+       <li id="list6" onclick="player('6')" title="凤凰直播" ><span></span></li>
+	   <li id="list4" onclick="player('4')" title="网络直播" ><span></span></li> 
+       <li id="list1" onclick="player('1')" title="风云直播" ><span></span></li>
+	   <li id="list3" onclick="player('3')" title="地方卫视" ><span></span></li> 
+      </ul> 
+     </div> 
+     <div class="channel-main-player"> 
+      <div>
+       <iframe id="player-frame"  frameborder="0" marginheight="0" marginwidth="0" allowtransparency="true" scrolling="no" width="970" height="600" style="padding:0; margin:10px 0;"></iframe>
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+  </div>   
+  <script type="text/javascript">
+	player(2);
+      function  player(n){
+		  for(i=0;i<9;i++){ 
+		     if(n==i){
+				document.getElementById("player-frame").src="index/live"+n+"..html";
+				document.getElementById("list"+n).className = "current";
+			 }else{
+				document.getElementById("list"+i).className = "";
+			 }
+		  }
+	  }
+</script> 
+ </body>
+</html>

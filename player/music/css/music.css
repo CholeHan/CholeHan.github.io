@@ -1,0 +1,70 @@
+body{ font-family:"Microsoft YaHei",verdana,Arial,sans-serif,Helvetica; font-size:14px; }
+body,html,div,h1,h2,h3,span,p,i,iframe,*{ padding:0; margin:0;}
+a{ color:#000; text-decoration:none; star:expression(this.onfocus=this.onblur)}
+a:hover{ color:#000; text-decoration:none;}
+:focus{ outline:none;}
+img{ vertical-align:middle; border:none; width:40px;}
+ul,li{ list-style:none;}
+.clear{ height:0; display:none; overflow:hidden; clear:both; font-size:0px; }
+
+.index-music-channel{ width:1030px; height:620px; margin:0; overflow:hidden; position:relative; }
+
+.index-music-channel .music-container{ width:1030px; height:620px;}
+
+.index-music-channel .music-container .channel-nav{ width:100%; height:37px; line-height:38px; padding-left:8px; border-bottom:1px solid #666; background: url(../image/channel-back.png) repeat-x 0 0; position:relative;}
+
+.index-music-channel .music-container .channel-nav .light0{ width:100%; height:37px; position:absolute; left:0; top:0; background:lime; background:url(../image/channel-list-li-click3.png) no-repeat -30px 0; z-index:1;}
+
+.index-music-channel .music-container .channel-nav .light1{ width:100%; height:37px; position:absolute; left:0; top:0; background:lime; background:url(../image/channel-list-li-click3.png) no-repeat 60px 0; z-index:1;}
+
+.index-music-channel .music-container .channel-nav .light2{ width:100%; height:37px; position:absolute; left:0; top:0; background:lime; background:url(../image/channel-list-li-click3.png) no-repeat 150px 0; z-index:1;}
+
+.index-music-channel .music-container .channel-nav .light3{ width:100%; height:37px; position:absolute; left:0; top:0; background:lime; background:url(../image/channel-list-li-click3.png) no-repeat 240px 0; z-index:1;}
+
+.index-music-channel .music-container .channel-nav .light4{ width:100%; height:37px; position:absolute; left:0; top:0; background:lime; background:url(../image/channel-list-li-click3.png) no-repeat 330px 0; z-index:1;}
+
+.index-music-channel .music-container .channel-nav .light5{ width:100%; height:37px; position:absolute; left:0; top:0; background:lime; background:url(../image/channel-list-li-click3.png) no-repeat 420px 0; z-index:1;}
+
+.index-music-channel .music-container .channel-nav .light6{ width:100%; height:37px; position:absolute; left:0; top:0; background:lime; background:url(../image/channel-list-li-click3.png) no-repeat 510px 0; z-index:1;}
+
+.index-music-channel .music-container .channel-nav .light7{ width:100%; height:37px; position:absolute; left:0; top:0; background:lime; background:url(../image/channel-list-li-click3.png) no-repeat 600px 0; z-index:1;}
+
+.index-music-channel .music-container .channel-nav .light8{ width:100%; height:37px; position:absolute; left:0; top:0; background:lime; background:url(../image/channel-list-li-click3.png) no-repeat 690px 0; z-index:1;}
+
+
+.index-music-channel .music-container .channel-nav .light-line{ width:100%; height:37px; position:absolute; left:0; top:0; z-index:2;}
+
+.index-music-channel .music-container .channel-nav .line li{ background:none;}
+
+
+.index-music-channel .music-container .channel-nav .channel-list{ width:100%; height:38px; overflow:hidden;}
+
+.music-container .channel-nav .channel-list li{ float:left; width:90px; height:38px; background:url(../image/channel-list-li.png) no-repeat right center; cursor:pointer;}
+
+.music-container .channel-nav .channel-list li i{ display:block; float:left; width:90px; height:38px; text-align:center; color:#fff; font-style:normal; cursor:pointer;}
+
+.music-container .channel-nav .channel-list li.rel{ background:url(../image/channel-list-li-click.png) no-repeat 0 3px;}
+
+
+.index-music-channel .music-container .channel-content{ width:100%; height:580px; background:url(../image/main-player-back.png) repeat 0 0 ; display:none;}
+
+.music-container .channel-content .channel-menu{ float:left; width:188px; height:580px;  background: url(../image/channel-menu-back.png) repeat 0 0;}
+
+.music-container .channel-content .channel-menu .menu-list{width:68px; height:556px;}
+
+.music-container .channel-content .channel-menu .menu-list li{ float:left; width:188px; height:68px; cursor:pointer; background:url(../image/menu-list-li.png) no-repeat left bottom;}
+
+
+.channel-content .channel-menu .menu-list li span{ display:block; float:left; width:150px; height:40px; margin:14px 0 0 32px;}
+
+.channel-content .channel-menu .menu-list li span em{ width:90px; height:40px; line-height:40px; color:#fff; font-style:normal; margin-left:20px;}
+
+.channel-content .channel-menu .menu-list li.current{ background: url(../image/menu-list-li-hover.png) no-repeat 0 0px;}
+
+.channel-main-player{ display:block;  width:840px; height:580px; z-index:9999; position:absolute; right:0;bottom:0; }
+
+.channel-main-player .player-con{ width:840px; height:578px; margin:0;overflow:hidden;}
+
+.channel-main-player2{ display:none;  width:1030px; height:582px; z-index:9999; position:absolute; right:0px;bottom:0; }
+
+.channel-main-player2 .player-con2{ width:1030px; height:580px; margin:0;overflow:hidden;}

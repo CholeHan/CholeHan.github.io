@@ -1,0 +1,42 @@
+﻿
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>赫本网_赫本主页，潮流世界_每天上网从赫本开始档</title>
+<base target="_blank"/>
+<link href="css/gonju-css.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript">
+settab_gongju('gongju',1,7);
+function settab_gongju(name,num,n){
+ for(i=1;i<=n;i++){
+  var menu=document.getElementById(name+i);
+  var con=document.getElementById(name+"_"+"gongju"+i);
+  menu.className=i==num?"on_gongju":"";
+  if(num==i){
+	document.getElementById("win8_page_01").src="gongju-"+num+"..html";
+  }  
+ }
+}
+</script>
+</head>
+<body onload="settab_gongju('gongju',1,7);">
+	<div class="tab">
+        <ul>
+            <li id="gongju1" onmouseover="settab_gongju('gongju',1,7)" class="on_gongju">常用工具</li>
+            <li id="gongju2" onmouseover="settab_gongju('gongju',2,7)">生活服务</li>
+            <li id="gongju3" onmouseover="settab_gongju('gongju',3,7)">交通地图</li>
+            <li id="gongju4" onmouseover="settab_gongju('gongju',4,7)">教育学习</li>
+            <li id="gongju5" onmouseover="settab_gongju('gongju',5,7)">金融理财</li>
+            <li id="gongju6" onmouseover="settab_gongju('gongju',6,7)">休闲娱乐</li>
+            <li id="gongju7" onmouseover="settab_gongju('gongju',7,7)">常用软件</li>
+        </ul>
+    </div>
+	<div class="list">
+        <div id="gongju_gongju1">
+            <iframe id="win8_page_01" name="win8_page_01"    allowtransparency="true" width="1030" height="410" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+        </div>
+    </div>
+</body>
+</html>

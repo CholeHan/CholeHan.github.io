@@ -1,0 +1,66 @@
+* {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; PADDING-BOTTOM: 0px; LIST-STYLE-TYPE: none; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BORDER-TOP: medium none; LIST-STYLE-IMAGE: none; BORDER-RIGHT: medium none; PADDING-TOP: 0px
+}
+BODY {
+	FONT-FAMILY: "Microsoft YaHei", Verdana, Arial, Helvetica, sans-serif
+}
+A {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; COLOR: #000; BORDER-TOP: medium none; BORDER-RIGHT: medium none; TEXT-DECORATION: none
+}
+.box {
+	WIDTH: 1030px; HEIGHT: 450px
+}
+.box .box_left {
+	WIDTH: 160px; FLOAT: left; HEIGHT: 450px
+}
+.box .box_left .left_top {
+	POSITION: relative; WIDTH: 160px; BACKGROUND: url(../images/title_bg0.png) no-repeat; HEIGHT: 60px
+}
+.box .box_left .left_bottom {
+	WIDTH: 160px; BACKGROUND: url(../images/icon_bg.png); HEIGHT: 383px
+}
+.box .box_left .left_bottom UL {
+	WIDTH: 160px; HEIGHT: 390px
+}
+.box .box_left .left_bottom UL LI {
+	TEXT-ALIGN: center; LINE-HEIGHT: 42px; LIST-STYLE-TYPE: none; WIDTH: 80px; FLOAT: left; HEIGHT: 42px; COLOR: #fff; FONT-SIZE: 14px; CURSOR: pointer; FONT-WEIGHT: bold; LIST-STYLE-IMAGE: none
+}
+.box .box_left .left_bottom UL LI:hover {
+	BACKGROUND: url(../images/title.png) no-repeat center 50%; COLOR: #666
+}
+.box .box_left .left_bottom UL .add_www {
+	BACKGROUND: url(../images/title.png) no-repeat center 50%; COLOR: #666
+}
+.box .box_right {
+	POSITION: relative; WIDTH: 870px; BACKGROUND: url(../images/ringt_bg.png); FLOAT: left; HEIGHT: 443px; OVERFLOW: hidden
+}
+.box .box_right .right_nr {
+	POSITION: absolute; WIDTH: 870px; HEIGHT: 450px; TOP: 0px; LEFT: -900px; opacity: 0
+}
+.box .box_right .right_0 {
+	LEFT: 0px; opacity: 1
+}
+.right_nr LI {
+	POSITION: relative; MARGIN: 0px 0px 5px 5px; WIDTH: 119px; FLOAT: left; HEIGHT: 107px; OVERFLOW: hidden
+}
+.right_nr LI.hs {
+	HEIGHT: 219px
+}
+.right_nr LI.ls {
+	WIDTH: 243px
+}
+.title {
+	Z-INDEX: 2; POSITION: absolute; LINE-HEIGHT: 20px; PADDING-LEFT: 15px; WIDTH: 110px; BOTTOM: 10px; HEIGHT: 20px; FONT-SIZE: 14px; LEFT: -220px
+}
+.title1 {
+	COLOR: #fff
+}
+.right_nr LI .shine1 {
+	Z-INDEX: 2; POSITION: absolute; WIDTH: 119px; BACKGROUND: url(../images/shine1.png) no-repeat -150px 0px; HEIGHT: 107px; TOP: 0px; LEFT: 0px
+}
+.right_nr LI .shine2 {
+	Z-INDEX: 2; POSITION: absolute; WIDTH: 243px; BACKGROUND: url(../images/shine1.png) no-repeat -119px 0px; HEIGHT: 107px; TOP: 0px; LEFT: 0px
+}
+.right_nr LI .shine3 {
+	Z-INDEX: 2; POSITION: absolute; WIDTH: 119px; BACKGROUND: url(../images/shine2.png) no-repeat -119px 0px; HEIGHT: 219px; TOP: 0px; LEFT: 0px
+}

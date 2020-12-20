@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>搜索
+</title>
+<style>
+*{ margin:0; padding:0; list-style:none; border:none;}
+body {font-family:"Microsoft YaHei",Verdana, Arial, Helvetica, sans-serif; position:relative;}
+.sousuo_icon{ width:280px; height:60px; position:absolute; top:10px; right:20px; z-index:500;}
+.sousuo_icon li{ width:60px; height:60px; margin-left:10px; float:left; cursor:pointer;}
+#icon_0{ background:url(image/icon_0_hover.png);}
+#icon_1{ background:url(image/icon_1.png);}
+#icon_2{ background:url(image/icon_2.png);}
+#icon_3{ background:url(image/icon_3.png);}
+#icon_0:hover{background:url(image/icon_0_hover.png);}
+#icon_1:hover{background:url(image/icon_1_hover.png);}
+#icon_2:hover{background:url(image/icon_2_hover.png);}
+#icon_3:hover{background:url(image/icon_3_hover.png);}
+
+.sousuo_tools{ width:1030px; height:450px; margin:0 auto; position:relative; overflow:hidden;}
+.tools_list{ width:1030px; height:450px; position:absolute; top:0px; left:-1000px;}
+.tools_0{ left:0px;}
+.tools_3{ width:100%; height:100%;}
+</style>
+<script src="js/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript"> 
+$(document).ready(function() {
+	$(".sousuo_icon li").click(function(){
+		var st=$(this).index();
+		for( var i=0;i<4;i++){
+		  if(i==st){
+		   var ub="url(image/icon_"+st+"_hover.png)";
+		    var id="icon_"+st;
+			var list="tools_"+st;
+		   $("#"+id).css({"background":ub})	  
+		   $("."+list).animate({"opacity":"1","left":"0"},1000);
+		   if(st==0){
+			  $("#sousuo_list_0").attr("src","bd_sosuo.html");
+			  } else if(st==1){
+				  $("#sousuo_list_1").attr("src","google_sosuo.html");
+				 }else if(st==2){
+				  $("#sousuo_list_2").attr("src","360_sosuo.html");
+				 }else{
+				  $("#sousuo_list_3").attr("src","by_sosuo.html");
+				 }
+		 }else{
+		  var ut="url(image/icon_"+i+".png)";
+		  var id="icon_"+i;
+		  var lis="tools_"+i;
+		  var src="sousuo_list_"+i;
+		  $("#"+id).css({"background":ut});
+		  $("."+lis).animate({"opacity":"0","left":"-1000"},1000);
+		  $("#"+src).attr("src","");
+		  
+		}
+	   }
+	})
+});
+</script>
+</head>
+
+<body>
+ <ul class="sousuo_icon">
+     <li id="icon_0"></li>
+     <li id="icon_1"></li>
+     <li id="icon_2"></li>
+     <li id="icon_3"></li>
+  </ul>
+  <div class="sousuo_tools">
+    <div class="tools_list tools_0">
+      <iframe id="sousuo_list_0" name="sousuo_list_0" allowtransparency="true" width="1030" height="450" frameborder="0" marginwidth="0"  marginheight="0" scrolling="no" src="bd_sosuo.html" ></iframe>
+    </div>
+    <div class="tools_list tools_1">
+      <iframe id="sousuo_list_1" name="sousuo_list_1" allowtransparency="true" width="1030" height="450" frameborder="0" marginwidth="0"  marginheight="0" scrolling="no"></iframe>
+    </div>
+    <div class="tools_list tools_2">
+      <iframe id="sousuo_list_2" name="sousuo_list_2" allowtransparency="true" width="1030" height="450" frameborder="0" marginwidth="0"  marginheight="0" scrolling="no"></iframe>
+    </div>
+    <div class="tools_list tools_3">
+      <iframe id="sousuo_list_3" name="sousuo_list_3" allowtransparency="true" width="1030" height="450" frameborder="0" marginwidth="0"  marginheight="0" scrolling="no"></iframe>
+    </div>
+  </div>
+</body>
+</html>

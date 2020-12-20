@@ -1,0 +1,201 @@
+@charset "utf-8";
+body {
+	margin:0px;
+	padding:0px;
+}
+.box{
+	width:1030px;
+	height:580px;
+	margin:0px;
+	padding:0px;
+	overflow:hidden;
+	position:relative;
+}
+.game-name{
+	width:100%;
+	height:20px;
+	line-height:20px;
+	text-align:center;
+	color:#fff;
+	margin:0px;
+	padding:0px;
+}
+
+
+.box .game-lie1{
+	height: 125px;
+	width: 100%;
+	margin-top:0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	padding-top:20px
+}
+.box .game-lie2{
+	padding:0px;
+	margin: 10px 0;
+	height: 125px;
+	width: 100%;
+}
+.box .icon1 {
+	vertical-align:middle;
+	margin: 0;
+	float: left;
+	height: 120px;
+	width: 114px;
+}
+.box .icon1 a{
+	position:relative;
+	text-decoration:none;
+	display:block;
+	overflow:hidden;
+	cursor:pointer;
+	font-size:14px;
+	color:#000;
+	font-family:"微软雅黑" ,"宋体";
+}
+.box .icon1 a:hover{
+	color:#F00;
+}
+
+
+#pg-1{
+	width:990px;
+	height:120px;
+	margin:10px auto;
+	padding:0px;
+	border-bottom-width: 2px;
+	border-bottom-style: double;
+	border-bottom-color: #bbb;
+}
+#pg-1 .hot1{
+     width:170px;
+	 height:90px;
+	 margin:8px 35px 0px 0px;
+	 padding:0px;
+	 float:left;
+}
+#pg-1 .hot2{
+     width:170px;
+	 height:90px;
+	 margin:8px 0px 0px 0px;
+	 padding:0px;
+	 float:left;	
+}
+#pg-1 ul{
+	width:90px;
+	height:90px;
+	margin:0px;
+	padding:0px;
+	float:right;
+}
+#pg-1 li{
+	list-style:none;
+	height:18px;
+	line-height:18px;
+	margin:2px 0px 0px 10px;
+	padding:0px;
+	text-align:center;
+}
+#pg-1 li a{
+	text-decoration:none;
+    font-size:12px;
+	font-family:"微软雅黑", "宋体";
+	color:#000;
+}
+#pg-1 li a:hover{
+	color:#F00;
+}
+#pg-1 .biaoti{
+	font-weight:bold;	
+}
+#pg-1 .qu{
+	color:#F00;	
+}
+
+#pg-2{
+	width:1030px;
+	height:250px;
+	margin:20px auto;
+	padding:0px;
+}
+.box .logo{
+	width:1030px;
+	height:410px;
+	margin:px;
+	padding-left:5px;
+}
+.logo ul{
+	margin:15px auto;
+	padding:0px;
+}
+.logo li{
+	margin:0px;
+	padding:0px;
+	list-style:none;
+	float:left;
+}
+.logo .logo1{
+	width:135px;
+	height:120px;
+	margin:10px 5px 5px 5px;
+	padding:0px;
+}
+.logo .logo2{
+	width:280px;
+	height:120px;
+	margin:10px 5px 5px 5px;
+	padding:0px;
+}
+.logo img{
+	margin:0px; 
+	padding:0px;	
+	border-style:none; 	
+}
+.logo li a{
+	width:100%;
+	height:120px;
+	position:relative;
+	text-decoration:none;
+	display:block;
+	overflow:hidden;
+	cursor:pointer;
+	font-size:13px;
+	color:#000;
+	font-family:"微软雅黑" ,"宋体";
+}
+
+
+
+
+.tab{
+	width:1030px;
+	height:40px;
+	border-bottom:0; 
+	background:url(../images/bg-list.png);
+}
+	
+.tab ul{
+	margin:0;
+	padding:0;
+}
+	
+.tab li{
+	float:left;
+	padding:0px; 
+	margin-left:15px;
+	width:50px;
+	height:40px;
+	line-height:40px;
+	text-align:center;
+	font-size:14px;
+	cursor:pointer; 
+	list-style:none; 
+	color:#eee; 
+	font-family: "微软雅黑", "宋体";
+	}
+.tab li.on_game{
+	color:#FF2828;
+	font-family: "微软雅黑", "宋体";
+	background:url(../images/list-jiao.png) no-repeat 18px 30px;
+}

@@ -1,0 +1,92 @@
+body{ font-family:"Microsoft YaHei",verdana,Arial,sans-serif,Helvetica; font-size:12px; }
+body,html,div,h1,h2,h3,span,p,i,iframe,*{ padding:0; margin:0;}
+a{ color:#000; text-decoration:none; star:expression(this.onfocus=this.onblur)}
+a:hover{ color:#000; text-decoration:none;}
+:focus{ outline:none;}
+img{ vertical-align:middle; border:none; width:32px;}
+ul,li{ list-style:none;}
+.clear{ height:0; display:none; overflow:hidden; clear:both; font-size:0px; }
+
+.index-video-channel{ width:1030px; height:620px; margin:0; overflow:hidden; position:relative; }
+
+
+.index-video-channel .video-container{ width:1030px; height:620px;}
+
+.index-video-channel .video-container .channel-content{ width:100%; height:620px; background:#303030;}
+
+.video-container .channel-content .channel-menu{ float:left; width:60px; height:620px;  position:relative; background:#202020}
+
+.video-container .channel-content .channel-menu .menu-list{width:60px; height:596px; position:absolute; left:5px; top:24px; z-index:101;}
+
+.video-container .channel-content .channel-menu .menu-list li{ float:left; width:58px; height:58px; margin-bottom:5px; cursor:pointer}
+
+.channel-main-player{ float:left; width:970px; height:620px;  margin:0px; overflow:hidden; position:relative;}
+
+
+.channel-content .channel-menu .menu-list li span{ display:block; width:46px; height:46px; margin:3px 3px;}
+
+.channel-content .channel-menu .menu-list li.current{ background:url(../image/bg.png) no-repeat 0 0;}
+
+
+
+.channel-content .channel-menu .menu-list li#list0 span{background: url(../image/1.png) no-repeat 0 0;}
+
+.channel-content .channel-menu .menu-list li#list0:hover span{background:url(../image/hover/1.png) no-repeat 0 0;}
+
+.channel-content .channel-menu .menu-list li#list0.current span{background:url(../image/click/1.png) no-repeat 0 0;}
+
+
+.channel-content .channel-menu .menu-list li#list1 span{background:url(../image/6.png) no-repeat 0 0;}
+
+.channel-content .channel-menu .menu-list li#list1:hover span{background:url(../image/hover/6.png) no-repeat 0 0;}
+
+.channel-content .channel-menu .menu-list li#list1.current span{background:url(../image/click/6.png) no-repeat 0 0;}
+
+
+.channel-content .channel-menu .menu-list li#list2 span{background:url(../image/2.png) no-repeat 0 0;}
+
+.channel-content .channel-menu .menu-list li#list2:hover span{background:url(../image/hover/2.png) no-repeat 0 0;}
+
+.channel-content .channel-menu .menu-list li#list2.current span{background:url(../image/click/2.png) no-repeat 0 0;}
+
+
+.channel-content .channel-menu .menu-list li#list3 span{background:url(../image/5.png) no-repeat 0 0;}
+
+.channel-content .channel-menu .menu-list li#list3:hover span{background:url(../image/hover/5.png) no-repeat 0 0;}
+
+.channel-content .channel-menu .menu-list li#list3.current span{background:url(../image/click/5.png) no-repeat 0 0;}
+
+
+.channel-content .channel-menu .menu-list li#list4 span{background:url(../image/8.png) no-repeat 0 0;}
+
+.channel-content .channel-menu .menu-list li#list4:hover span{background:url(../image/hover/8.png) no-repeat 0 0;}
+
+.channel-content .channel-menu .menu-list li#list4.current span{background:url(../image/click/8.png) no-repeat 0 0;}
+
+
+.channel-content .channel-menu .menu-list li#list5 span{background:url(../image/4.png) no-repeat 0 0;}
+
+.channel-content .channel-menu .menu-list li#list5:hover span{background:url(../image/hover/4.png) no-repeat 0 0;}
+
+.channel-content .channel-menu .menu-list li#list5.current span{background:url(../image/click/4.png) no-repeat 0 0;}
+
+
+.channel-content .channel-menu .menu-list li#list6 span{background:url(../image/7.png) no-repeat 0 0;}
+
+.channel-content .channel-menu .menu-list li#list6:hover span{background:url(../image/hover/7.png) no-repeat 0 0;}
+
+.channel-content .channel-menu .menu-list li#list6.current span{background:url(../image/click/7.png) no-repeat 0 0;}
+
+
+.channel-content .channel-menu .menu-list li#list7 span{background:url(../image/3.png) no-repeat 0 0;}
+
+.channel-content .channel-menu .menu-list li#list7:hover span{background:url(../image/hover/3.png) no-repeat 0 0;}
+
+.channel-content .channel-menu .menu-list li#list7.current span{background:url(../image/click/3.png) no-repeat 0 0;}
+
+
+.channel-content .channel-menu .menu-list li#list8 span{background:url(../image/9.png) no-repeat 0 0;}
+
+.channel-content .channel-menu .menu-list li#list8:hover span{background:url(../image/hover/9.png) no-repeat 0 0;}
+
+.channel-content .channel-menu .menu-list li#list8.current span{background:url(../image/click/9.png) no-repeat 0 0;}

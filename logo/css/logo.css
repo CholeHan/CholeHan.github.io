@@ -1,0 +1,53 @@
+@charset "utf-8";
+*{ margin:0px; padding:0px; border:none; list-style:none;}
+body{ font-family:"Microsoft YaHei",Verdana, Arial, Helvetica, sans-serif;}
+a{color:#000;text-decoration:none; border:none;}
+.box {
+	height: 450px;
+	width: 1030px;
+}
+.box .box_left{height:450px; width:160px;float:left;}
+.box .box_left .left_top{ width:160px; height:60px;background:url(../images/title_bg0.png) no-repeat; position:relative;}
+.box .box_left .left_bottom{ width:160px; height:383px; background:url(../images/icon_bg.png)}
+.box .box_left .left_bottom ul{width:160px;height:390px;}
+.box .box_left .left_bottom ul li{ width:80px; height:42px; line-height:42px; float:left; list-style:none; text-align:center; color:#FFF; font-size:14px; font-weight:bold;cursor:pointer;}
+.box .box_left .left_bottom ul li:hover,.box .box_left .left_bottom ul .add_www{ color:#666; background:url(../images/title.png) no-repeat center;}
+
+
+.box .box_right{ height:443px; width:870px; float:left; overflow:hidden; background: url(../images/ringt_bg.png); position:relative;}
+.box .box_right .right_nr{ width:870px; height:450px; position:absolute; left:-900px; top:0px; opacity:0;}
+.box .box_right .right_0{ left:0px; opacity:1;}
+.right_nr li{ width:119px; height:107px; margin:0 0 5px 5px; float:left; position:relative; overflow:hidden;}
+.right_nr li.hs{ height:219px}
+.right_nr li.ls{ width:243px}
+
+
+.title{z-index:2;position:absolute;bottom:10px;left:-220px;width:110px;height:20px;padding-left:15px;line-height:20px; font-size:14px;}
+.title1{ color:#FFF;}
+.right_nr li .shine1{
+	z-index:2;
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:119px;
+	height:107px;
+	background:url(../images/shine1.png) no-repeat -150px 0;
+}
+.right_nr li .shine2{
+	z-index:2;
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:243px;
+	height:107px;
+	background:url(../images/shine1.png) no-repeat -119px 0;
+}
+.right_nr li .shine3{
+	z-index:2;
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:119px;
+	height:219px;
+	background:url(../images/shine2.png) no-repeat -119px 0;
+}

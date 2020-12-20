@@ -1,0 +1,40 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{ font-family:"Microsoft YaHei",verdana,Arial,sans-serif,Helvetica; font-size:12px; }
+body,html,div,h1,h2,h3,span,p,i,iframe,*{ padding:0; margin:0;}
+a{ color:#000; text-decoration:none; star:expression(this.onfocus=this.onblur)}
+a:hover{ color:#000; text-decoration:none;}
+:focus{ outline:none;}
+img{ vertical-align:middle; border:none; width:32px;}
+ul,li{ list-style:none;}
+.clear{ height:0; display:none; overflow:hidden; clear:both; font-size:0px; }
+
+.index-video-channel{ width:1030px; height:620px; margin:0; overflow:hidden; position:relative; }
+
+
+.index-video-channel .video-container{ width:1030px; height:620px;}
+
+.index-video-channel .video-container .channel-content{ width:100%; height:620px; background:#303030;}
+
+.channel-main-player{ float:left; width:970px; height:620px;  margin:0px; overflow:hidden; position:relative;}
+
+.video-container .channel-content .channel-menu{ float:left; width:60px; height:620px;  position:relative; background:#202020}
+
+.video-container .channel-content .channel-menu .menu-list{width:60px; height:596px; position:absolute; left:5px; top:24px; z-index:101;}
+
+.video-container .channel-content .channel-menu .menu-list li{ float:left; width:58px; height:58px; margin-bottom:5px; cursor:pointer}
+
+.channel-content .channel-menu .menu-list li span{ display:block; width:40px; height:45px; margin:4px 6px;}
+
+.channel-content .channel-menu .menu-list li.current{ background:url(../image/bg.png) no-repeat 0 0;}
+
+
+.channel-content .channel-menu .menu-list li#list0 span{background:url(../image/radio0.png) no-repeat 0 0;}
+
+.channel-content .channel-menu .menu-list li#list0.current span{background:url(../image/hover/radio0.png) no-repeat 0 0;}
+
+
+.channel-content .channel-menu .menu-list li#list1 span{background:url(../image/radio1.png) no-repeat 0 0;}
+
+.channel-content .channel-menu .menu-list li#list1.current span{background:url(../image/hover/radio1.png) no-repeat 0 0;}

@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0022)http://blog.csdn.net/electroniXtar/ -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Game</title>
+<base target="_blank"/>
+<link href="css/game-style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+function settab_game(name,num,n){
+ for(i=1;i<=n;i++){
+  var menu=document.getElementById(name+i);
+  var con=document.getElementById(name+"_"+"game"+i);
+  menu.className=i==num?"on_game":"";
+   if(num==i){
+	   setTimeout(function(){
+	document.getElementById("win8_page_01").src="game"+num+"..html";},300)
+   }
+}
+}
+</script>
+</head>
+
+<body>
+<div class="tab">
+        <ul>
+            <li id="game1" onmouseover="settab_game('game',1,9)" class="on_game">最热</li>
+            <li id="game2" onmouseover="settab_game('game',2,9)">益智</li>
+            <li id="game3" onmouseover="settab_game('game',3,9)">休闲</li>
+            <li id="game4" onmouseover="settab_game('game',4,9)">棋牌</li>
+            <li id="game5" onmouseover="settab_game('game',5,9)">动作</li>
+            <li id="game6" onmouseover="settab_game('game',6,9)">射击</li>
+            <li id="game7" onmouseover="settab_game('game',7,9)">冒险</li>
+            <li id="game8" onmouseover="settab_game('game',8,9)">页游</li>
+            <li id="game9" onmouseover="settab_game('game',9,9)">网站</li>
+        </ul>
+    </div>
+<div class="list">
+        <div id="game_game1">
+            <iframe id="win8_page_01" name="win8_page_01" src="game1.html"  allowtransparency="true" width="1030" height="580" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+        </div>
+</div>
+</body>
+</html>

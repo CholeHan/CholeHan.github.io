@@ -1,0 +1,46 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head> 
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+  <title>广播电台_赫本网_赫本主页，潮流世界_每天上网从赫本开始</title> 
+	<meta http-equiv="pragma" content="no-cache"> 
+	<meta http-equiv="cache-control" content="no-cache"> 
+	<meta http-equiv="expires" content="0">  
+
+<link rel="stylesheet" type="text/css" href="css/radio.css" />
+ </head> 
+ <body> 
+  <div class="index-video-channel">  
+   <div class="video-container"> 
+    <div class="channel-content"> 
+     <div class="channel-menu"> 
+      <ul class="menu-list"> 
+	   <li id="list1" onclick="player('1')" title="630广播电台" ><span></span></li>	  
+	   <li id="list0" onclick="player('0')" title="新浪广播电台" ><span></span></li>
+
+      </ul> 
+     </div> 
+     <div class="channel-main-player"> 
+      <div>
+       <iframe id="player-frame"  frameborder="0" marginheight="0" marginwidth="0" allowtransparency="true" scrolling="no" width="970" height="600" style="padding:0; margin:10px 0;"></iframe>
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+  </div>   
+  <script type="text/javascript">
+	player(1);
+      function  player(n){
+		  for(i=0;i<2;i++){ 
+		     if(n==i){
+				document.getElementById("player-frame").src="index/sinaradio"+n+"..html";
+				document.getElementById("list"+n).className = "current";
+			 }else{
+				document.getElementById("list"+i).className = "";
+			 }
+		  }
+	  }
+</script> 
+ </body>
+</html>

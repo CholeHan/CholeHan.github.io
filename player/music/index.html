@@ -1,0 +1,258 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0046)http://www.heben123.com/win8/player/music.html -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>音乐</title>
+	<meta http-equiv="pragma" content="no-cache"> 
+	<meta http-equiv="cache-control" content="no-cache"> 
+	<meta http-equiv="expires" content="0"> 
+<link rel="stylesheet" type="text/css" href="css/music.css">
+</head>
+<body onload="chang_player('3','0');" >
+<div class="index-music-channel">
+  <div class="music-container">
+   <div class="channel-nav">
+		 <div class="light0" id="light3" style="display: block; "></div>
+		 <div class="light1" id="light4" style="display: none; "></div>
+         <div class="light2" id="light6" style="display: none; "></div>
+		 <div class="light3" id="light7" style="display: none; "></div>
+         <div class="light4" id="light8" style="display: none; "></div>
+		 <div class="light5" id="light5" style="display: none; "></div>
+         <div class="light6" id="light0" style="display: none; "></div>
+         <div class="light7" id="light1" style="display: none; "></div>
+         <div class="light8" id="light2" style="display: none; "></div>
+         <div class="light-line">
+             <ul class="channel-list line">
+                <li id="line" onclick="chang_player('3','0');"></li>
+				<li id="line" onclick="chang_player('4','0');"></li>
+                <li id="line" onclick="chang_player('6','0');"></li>
+                <li id="line" onclick="chang_player('7','0');"></li>
+                <li id="line" onclick="chang_player('8','0');"></li>
+				<li id="line" onclick="chang_player('5','0');"></li>
+                <li id="line" onclick="chang_player('0','0');"></li>
+                <li id="line" onclick="chang_player('1','4');"></li>
+                <li id="line" onclick="chang_player('2','0');"></li>
+                
+             </ul>
+         </div>
+         <ul class="channel-list">
+            <li class="rel" id="tit_3"><i>QQ音乐电台</i></li>
+			<li id="tit_4" class=""><i>豆瓣FM</i></li>
+            <li id="tit_6" class=""><i>多乐音乐</i></li>
+            <li id="tit_7" class=""><i>心理电台</i></li>
+            <li id="tit_8" class=""><i>动听音乐</i></li>
+			<li id="tit_5" class=""><i>酷我音乐</i></li>
+            <li id="tit_0" class=""><i>品质音乐</i></li>
+            <li id="tit_1" class=""><i>音乐电台</i></li>
+            <li id="tit_2" class=""><i>高清MV</i></li>
+            
+         </ul>
+      </div>
+
+	  
+<!--品质音乐-->	  
+      <div class="channel-content" id="playBox0">
+         <div class="channel-menu">
+             <ul class="menu-list" id="menu-list0">
+                <li id="music0" onclick="chang_player('0','0');"><span><img src="image/kugou.png"><em>酷狗音乐</em></span></li>
+                <li id="music1" onclick="chang_player('0','1');"><span><img src="image/kuwo.png"><em>酷我音乐</em></span></li>
+				<li id="music5" onclick="chang_player('0','5');"><span><img src="image/duomi.png"><em>多米音乐</em></span></li>
+				<li id="music4" onclick="chang_player('0','4');"><span><img src="image/xiami.png"><em>虾米音乐</em></span></li>
+                <li id="music2" onclick="chang_player('0','2');"><span><img src="image/yiting.png"><em>一听音乐</em></span></li>
+				<li id="music3" onclick="chang_player('0','3');"><span><img src="image/jiuku.png"><em>九酷音乐</em></span></li>				
+             </ul>
+         </div>
+      </div>
+<!--音乐电台-->	  
+      <div class="channel-content" id="playBox1">
+         <div class="channel-menu">
+             <ul class="menu-list" id="menu-list1">
+                <!--<li id="radio5" onclick="chang_player('1','5');"><span><img src="images/icon/sogou.png" /><em>搜狗电台</em></span></li>	-->
+				<li id="radio4" onclick="chang_player('1','4');"><span><img src="image/douban.png"><em>豆瓣电台</em></span></li>				
+                <li id="radio0" onclick="chang_player('1','0');"><span><img src="image/kugou-fm.png"><em>酷狗电台</em></span></li>
+				<li id="radio2" onclick="chang_player('1','2');"><span><img src="image/xiami.png"><em>虾米电台</em></span></li>				
+				<li id="radio1" onclick="chang_player('1','1');"><span><img src="image/kuwo-fm.png"><em>酷我电台</em></span></li>
+				<li id="radio3" onclick="chang_player('1','3');"><span><img src="image/beiwa-fm.png"><em>贝瓦电台</em></span></li>
+             </ul>
+         </div>
+      </div> 
+<!--高清MV -->	  
+      <div class="channel-content" id="playBox2">
+         <div class="channel-menu">
+             <ul class="menu-list" id="menu-list2">
+                <li id="tv0" onclick="chang_player('2','0');"><span><img src="image/yueTV.png"><em>音悦台</em></span></li>
+				<li id="tv2" onclick="chang_player('2','2');"><span><img src="image/youku.png"><em>优酷MV</em></span></li>
+				<li id="tv1" onclick="chang_player('2','1');"><span><img src="image/qiyi1.png"><em>奇异MV</em></span></li>
+             </ul>
+         </div>
+      </div>       
+   </div>
+    <div class="channel-main-player" id="channel-main-player" style="display: none; ">
+        <div class="player-con">
+            <div><iframe id="player-frame" frameborder="0" marginheight="0" marginwidth="0" allowtransparency="true" scrolling="no" width="840" height="580" style="padding:0; margin:0;" src=""></iframe></div>        
+        </div>
+    </div>   
+    <div class="channel-main-player2" id="channel-main-player2" style="display: block; ">
+        <div class="player-con2">
+            <div><iframe id="player-frame2" frameborder="0" marginheight="0" marginwidth="0" allowtransparency="true" scrolling="no" width="1030" height="580" style="padding:0; margin:0;" src=""></iframe></div>        
+        </div>
+    </div> 	
+</div>
+
+
+<script type="text/javascript">
+function  chang_player(n,m){
+  if(n==3||n==4||n==5||n==6||n==7||n==8){
+	document.getElementById("tit_0").className = "";
+	document.getElementById("light0").style.display = "none";   //0
+	document.getElementById("tit_1").className = "";
+	document.getElementById("light1").style.display = "none";   //0
+	document.getElementById("tit_2").className = "";
+	document.getElementById("light2").style.display = "none";   //0
+	document.getElementById("player-frame").src = "";
+	document.getElementById("channel-main-player").style.display = "none";	
+	document.getElementById("channel-main-player2").style.display = "block";
+	if(n==3){
+		document.getElementById("tit_4").className = "";
+		document.getElementById("light4").style.display = "none";   //0	
+		document.getElementById("tit_5").className = "";
+		document.getElementById("light5").style.display = "none";   //0			
+		document.getElementById("tit_3").className = "rel";
+		document.getElementById("light3").style.display = "block";   //0
+		document.getElementById("tit_6").className = "";
+		document.getElementById("light6").style.display = "none";   //0	
+		document.getElementById("tit_7").className = "";
+		document.getElementById("light7").style.display = "none";   //0			
+		document.getElementById("tit_8").className = "";
+		document.getElementById("light8").style.display = "none";   //0
+		document.getElementById("player-frame2").src = "index/qqfm.html";	
+	}else if(n==4){
+		document.getElementById("tit_3").className = "";
+		document.getElementById("light3").style.display = "none";   //0	
+		document.getElementById("tit_5").className = "";
+		document.getElementById("light5").style.display = "none";   //0			
+		document.getElementById("tit_4").className = "rel";
+		document.getElementById("light4").style.display = "block";   //0
+		document.getElementById("tit_6").className = "";
+		document.getElementById("light6").style.display = "none";   //0	
+		document.getElementById("tit_7").className = "";
+		document.getElementById("light7").style.display = "none";   //0			
+		document.getElementById("tit_8").className = "";
+		document.getElementById("light8").style.display = "none";   //0
+		document.getElementById("player-frame2").src = "index/doubanfm.html";	
+	}else if(n==5){
+		document.getElementById("tit_3").className = "";
+		document.getElementById("light3").style.display = "none";   //0	
+		document.getElementById("tit_4").className = "";
+		document.getElementById("light4").style.display = "none";   //0			
+		document.getElementById("tit_5").className = "rel";
+		document.getElementById("light5").style.display = "block";   //0
+		document.getElementById("tit_6").className = "";
+		document.getElementById("light6").style.display = "none";   //0	
+		document.getElementById("tit_7").className = "";
+		document.getElementById("light7").style.display = "none";   //0			
+		document.getElementById("tit_8").className = "";
+		document.getElementById("light8").style.display = "none";   //0
+		document.getElementById("player-frame2").src = "index/kuwo.html";	
+	}else if(n==6){
+		document.getElementById("tit_4").className = "";
+		document.getElementById("light4").style.display = "none";   //0	
+		document.getElementById("tit_5").className = "";
+		document.getElementById("light5").style.display = "none";   //0			
+		document.getElementById("tit_3").className = "";
+		document.getElementById("light3").style.display = "none";   //0
+		document.getElementById("tit_6").className = "rel";
+		document.getElementById("light6").style.display = "block";   //0	
+		document.getElementById("tit_7").className = "";
+		document.getElementById("light7").style.display = "none";   //0			
+		document.getElementById("tit_8").className = "";
+		document.getElementById("light8").style.display = "none";   //0
+		document.getElementById("player-frame2").src = "index/duolefm.html";	
+	}else if(n==7){
+		document.getElementById("tit_3").className = "";
+		document.getElementById("light3").style.display = "none";   //0	
+		document.getElementById("tit_5").className = "";
+		document.getElementById("light5").style.display = "none";   //0			
+		document.getElementById("tit_4").className = "";
+		document.getElementById("light4").style.display = "none";   //0
+		document.getElementById("tit_6").className = "";
+		document.getElementById("light6").style.display = "none";   //0	
+		document.getElementById("tit_7").className = "rel";
+		document.getElementById("light7").style.display = "block";   //0			
+		document.getElementById("tit_8").className = "";
+		document.getElementById("light8").style.display = "none";   //0
+		document.getElementById("player-frame2").src = "index/xinlifm.html";	
+	}else if(n==8){
+		document.getElementById("tit_3").className = "";
+		document.getElementById("light3").style.display = "none";   //0	
+		document.getElementById("tit_4").className = "";
+		document.getElementById("light4").style.display = "none";   //0			
+		document.getElementById("tit_5").className = "";
+		document.getElementById("light5").style.display = "none";   //0
+		document.getElementById("tit_6").className = "";
+		document.getElementById("light6").style.display = "none";   //0	
+		document.getElementById("tit_7").className = "";
+		document.getElementById("light7").style.display = "none";   //0			
+		document.getElementById("tit_8").className = "rel";
+		document.getElementById("light8").style.display = "block";   //0
+		document.getElementById("player-frame2").src = "index/dongtingfm.html";	
+	}
+  }else{
+	document.getElementById("tit_3").className = "";
+	document.getElementById("light3").style.display = "none";   //0
+	document.getElementById("tit_4").className = "";
+	document.getElementById("light4").style.display = "none";   //0	
+	document.getElementById("tit_5").className = "";
+	document.getElementById("light5").style.display = "none";   //0	
+	document.getElementById("tit_6").className = "";
+	document.getElementById("light6").style.display = "none";   //0
+	document.getElementById("tit_7").className = "";
+	document.getElementById("light7").style.display = "none";   //0	
+	document.getElementById("tit_8").className = "";
+	document.getElementById("light8").style.display = "none";   //0		
+	document.getElementById("channel-main-player2").style.display = "none";
+	document.getElementById("channel-main-player").style.display = "block";
+	document.getElementById("player-frame2").src = "";  
+	for(i=0;i<3;i++){ 
+		if(n==i){
+			document.getElementById("tit_"+n).className = "rel";
+			document.getElementById("light"+n).style.display = "block";   //0
+			document.getElementById("playBox"+n).style.display = "block"; 
+			if(n==0){  //品质音乐
+				for(var x=0;x<6;x++){
+					if(x==m){
+						document.getElementById("player-frame").src="index/pinzhi/music"+m+".html"
+						document.getElementById("music"+m).className = "current";
+					}else{
+						document.getElementById("music"+x).className = "";
+					}
+				}
+			} else 	if(n==1){  //音乐电台
+				for(var x=0;x<5;x++){
+					if(x==m){
+						document.getElementById("player-frame").src="index/radio/radio"+m+".html"
+						document.getElementById("radio"+m).className = "current";
+					}else{
+						document.getElementById("radio"+x).className = "";
+					}
+				}
+			} else 	if(n==2){  //高清MV
+				for(var x=0;x<3;x++){
+					if(x==m){
+						document.getElementById("player-frame").src="index/mv/MTV"+m+".html"
+						document.getElementById("tv"+m).className = "current";
+					}else{
+						document.getElementById("tv"+x).className = "";
+					}
+				}
+			}
+		}else{
+			document.getElementById("tit_"+i).className = ""; 
+			document.getElementById("light"+i).style.display = "none";
+			document.getElementById("playBox"+i).style.display = "none"; 
+		}
+	}	
+  }
+}	  
+</script>
+</body></html>

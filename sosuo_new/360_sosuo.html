@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!--STATUS OK-->
+<html><head>
+<meta http-equiv="X-UA-Compatible" content="IE=7">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>360搜索</title>
+<base target="_blank"/>
+<script src="js/jquery.min.js" type="text/javascript"></script>
+<script src="js/index.js" type="text/javascript"></script>
+</head>
+<style>
+*{ margin:0; padding:0; list-style:none; border:none;}
+a:visited {color:#333}
+a{ color:#333; font-weight:normal;}
+a:active {color:#3ba80d;} 
+.sousuo_tool_box{ width:600px; height:320px; margin:0px auto; padding-top:50px; overflow:hidden; position:relative;}
+.sousuo_tool{ width:600px; height:250px; position:relative;}
+.logo{ width:270px; height:90px; margin:0 auto; }
+.bd_logo{background:url(image/360.gif) center;}
+.table_list{ width:500px; height:30px; margin:10px 0 0 40px;}
+.table_list li{ width:45px; height:30px; line-height:30px; float:left; text-align:center; color:#333; cursor:pointer; font-size:14px;}
+.table_list li:hover{color:#3ba80d;}
+#on_list{ color:#3ba80d;cursor:auto; font-weight:bold;}
+.bottom{ width:560px; height:40px; margin-left:40px;}
+.input{ width:450px; height:36px; border:2px solid #3EAF0E; float:left;box-shadow:0 2px 1px #F0F0F0;}
+.bd_wd{ height:26px; line-height:26px; width:440px; border:none; margin:4px 5px; background:none;-webkit-appearance:none;outline:none;}
+.butn{ width:96px; height:36px; background: #3EAF0E; float:left; border:none; cursor:pointer; text-align:center; line-height:40px; color:#FFF; margin-left:5px; font-weight:bold; border:2px solid #3EAF0E;box-shadow:0 2px 1px #F0F0F0;}
+.butn:hover{ background:#4bbE11;}
+.more{ width:50px; height:90px; position:absolute; top:175px; right:105px; background:#FFF; display:none; border: #e6e6e6 1px solid;}
+.more li,a{ width:50px; height:30px; line-height:30px; text-align:center; font-size:14px; color:#333; text-decoration:none;}
+.more li:hover,a:hover{color:#3ba80d; background:#f5f5f5;}
+#li:hover .more{ display:block;}
+</style>
+
+<body  onkeydown="BindEnter(event)">
+
+<!-- 页面中的输入框  -->
+  <div class="sousuo_tool_box">
+     <div class="logo bd_logo"></div>
+     <ul class="table_list">
+        <li class="baidu_0">新闻</li>
+        <li class="baidu_1" id="on_list">网页</li>
+        <li class="baidu_2">问答</li>
+        <li class="baidu_3">视频</li>
+        
+        <li class="baidu_4">图片</li>
+        <li class="baidu_5">音乐</li>
+        <li class="baidu_6">地图</li>
+        <li class="baidu_7">良医</li>
+        <li><a href="http://www.leidian.com/">雷电</a></li>
+        <li id="li">更多
+          <ul class="more">
+          <li><a href="http://baike.so.com/">百科</a></li>
+          <li><a href="http://soft.so.com/">软件</a></li>
+          <li><a href="http://360.etao.com/">购物</a></li>
+        </ul>
+        </li>
+     </ul>
+     <div class="bottom">
+       <div class="input">
+         <input type="text" class="bd_wd" baiduSug="1"  x-webkit-speech autofocus/>
+       </div>
+       <div class="butn" onclick="c_onclick()">
+       搜索一下
+       </div>
+     </div>
+ </div>
+<!-- 百度搜索框提示 -->
+<script charset="gbk" src="../../www.baidu.com/js/opensug.js"></script>
+</body>
+</html>
